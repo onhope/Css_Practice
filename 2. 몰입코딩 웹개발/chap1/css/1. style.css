@@ -1,0 +1,9 @@
+header {
+  color: red;
+  background-color: blue;
+}
+content {
+  color: green;
+  background-color: pink;
+  display: block;
+}
