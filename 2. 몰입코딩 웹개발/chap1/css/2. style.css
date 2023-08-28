@@ -1,0 +1,10 @@
+div {
+  font-size: 140px;
+  font-weight: bold;
+  letter-spacing: -10px;
+  color:#787878;
+}
+section {
+  font-size: 10rem;
+  color:rgba(255,0,0,0.5);
+}
