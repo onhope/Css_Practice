@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글자 크기 px, rem, em</title>
+  <style>
+    html {
+      font-size: 50px;
+    }
+    h1 {
+      font-size: 2rem; /* html 크기의 2배인 100px */
+    }
+    p {
+      font-size: 16px;
+    }
+    span {
+      font-size: 2em; /* 상위 태그인 p태그의 2배인 32px */
+    }
+  </style>
+</head>
+<body>
+  <!-- h1의 기본 폰트 크기는 32px -->
+  <h1>아무 노래</h1> 
+  <!-- p의 기본 폰트 크기는 16px -->
+  <p>아무노래나 일단 틀어
+    <span>아무노래나 신나는 걸로</span>
+  </p> 
+</body>
+</html>
