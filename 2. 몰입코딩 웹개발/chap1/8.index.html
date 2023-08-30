@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 6개를 3x2 가운데 정렬로 배열해주세요, margin, padding</title>
+  <style>
+    img {
+      width: 300px;
+    }
+    .first, .second {
+      text-align: center;
+    }
+    .first > section {
+      display: inline-block;
+      padding: 25px;
+    }
+    .second > img {
+      display: inline-block;
+      margin: 25px;
+    }
+  </style>
+</head>
+<body>
+  <h1>v1. padding을 이용하기</h1>
+  <div class="first">
+    <section><img src="https://picsum.photos/id/11/600/600" alt=""></section>
+    <section><img src="https://picsum.photos/id/12/300/300" alt=""></section>
+    <section><img src="https://picsum.photos/id/13/300/300" alt=""></section>
+  </div>
+  <div class="first">
+    <section><img src="https://picsum.photos/id/14/600/600" alt=""></section>
+    <section><img src="https://picsum.photos/id/15/300/300" alt=""></section>
+    <section><img src="https://picsum.photos/id/16/300/300" alt=""></section>
+  </div>
+  <h1>v2. margin을 이용하기</h1>
+  <div>
+    <section class="second">
+      <img src="https://picsum.photos/id/11/600/600" alt="">
+      <img src="https://picsum.photos/id/12/300/300" alt="">
+      <img src="https://picsum.photos/id/13/300/300" alt="">
+    </section>
+    <section class="second">
+      <img src="https://picsum.photos/id/14/600/600" alt="">
+      <img src="https://picsum.photos/id/15/300/300" alt="">
+      <img src="https://picsum.photos/id/16/300/300" alt="">
+    </section>
+  </div>
+</body>
+</html>
