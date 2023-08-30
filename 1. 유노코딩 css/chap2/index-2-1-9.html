@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box-model 4</title>
+  <style>
+    div {
+      box-sizing: border-box;
+      width: 500px;
+      height: 500px;
+      border: 1px solid red;
+      /* background-color: red; */
+      background-image: url("https://source.unsplash.com/random/300x300");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; /* 이미지가 찌그러지지 않은 정도로 늘어남 */
+      background-size: contain; /* 이미지가 잘리지 않는 정도에서 최대사이즈 */
+      background: blue;
+      background: url("https://source.unsplash.com/random/300x300") no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <div>옐로우</div>
+</body>
+</html>
