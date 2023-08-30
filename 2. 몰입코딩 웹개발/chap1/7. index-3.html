@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 6개를 3x2 가운데 정렬로 배열해주세요</title>
+  <style>
+    div, article {
+      text-align: center;
+    }
+    img {
+      width: 300px;
+    }
+    section {
+      height: 50px;
+    }
+    .first-nav {
+      height: 50px;
+    }
+    div > nav {
+      display: inline-block;
+      width: 25px;
+    }
+    .second-nav {
+      height: 50px;
+    }
+    article > nav {
+      display: inline-block;
+      width: 330px;
+    }
+  </style>
+</head>
+<body>
+  <h1>v1. nbsp와 br 사용</h1>
+  <div id="v1"> 
+    <img src="https://picsum.photos/id/11/600/600" alt="">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://picsum.photos/id/12/300/300" alt="">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://picsum.photos/id/13/300/300" alt="">
+    <br>
+    <br>
+    <br>
+    <img src="https://picsum.photos/id/14/600/600" alt="">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://picsum.photos/id/15/300/300" alt="">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://picsum.photos/id/16/300/300" alt="">
+  </div>
+  <h1>v2. nbsp와 br 사용, div 하나에 이미지를 3개씩 감싸기</h1>
+  <div id="v2">
+    <div class="first">
+      <img src="https://picsum.photos/id/11/600/600" alt="">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://picsum.photos/id/12/300/300" alt="">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://picsum.photos/id/13/300/300" alt="">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="second">
+      <img src="https://picsum.photos/id/14/600/600" alt="">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://picsum.photos/id/15/300/300" alt="">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://picsum.photos/id/16/300/300" alt="">  
+    </div>    
+  </div>
+  <h1>v3. nbsp 사용, div 하나에 이미지를 3개씩 감싸기, div 사이에 section 넣고 높이 지정</h1>
+  <div id="v3">
+    <div>
+      <img src="https://picsum.photos/id/11/600/600" alt="">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://picsum.photos/id/12/300/300" alt="">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://picsum.photos/id/13/300/300" alt="">  
+    </div>
+    <section></section>
+    <div>
+      <img src="https://picsum.photos/id/14/600/600" alt="">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://picsum.photos/id/15/300/300" alt="">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://picsum.photos/id/16/300/300" alt="">
+    </div>
+  </div>
+  <h1>v4. nbsp 사용, div 하나에 이미지를 3개씩 감싸기, div 사이에 nav 넣고 인라인 CSS로 높이 지정</h1>
+  <div id="v4">
+    <div>
+      <img src="https://picsum.photos/id/11/600/600" alt="">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://picsum.photos/id/12/300/300" alt="">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://picsum.photos/id/13/300/300" alt="">
+    </div>
+    <nav class="first-nav"></nav>
+    <div>
+      <img src="https://picsum.photos/id/14/600/600" alt="">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://picsum.photos/id/15/300/300" alt="">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://picsum.photos/id/16/300/300" alt="">  
+    </div>
+  </div>
+  <h1>v5. nbsp와 br 사용 금지, 이미지 사이에 nav 태그 넣기</h1>
+  <div id="v5">
+    <div>
+      <img src="https://picsum.photos/id/11/600/600" alt="">
+      <nav></nav>
+      <img src="https://picsum.photos/id/12/300/300" alt="">
+      <nav></nav>
+      <img src="https://picsum.photos/id/13/300/300" alt="">
+    </div>
+    <nav class="second-nav"></nav>
+    <div>
+      <img src="https://picsum.photos/id/14/600/600" alt="">
+      <nav></nav>
+      <img src="https://picsum.photos/id/15/300/300" alt="">
+      <nav></nav>
+      <img src="https://picsum.photos/id/16/300/300" alt=""> 
+    </div>  
+  </div>
+  <h1>v6. nbsp와 br 사용 금지, 각각의 이미지를 nav 태그로 감싸기</h1>
+  <article>
+    <nav><img src="https://picsum.photos/id/11/600/600" alt=""></nav>
+    <nav><img src="https://picsum.photos/id/12/300/300" alt=""></nav>
+    <nav><img src="https://picsum.photos/id/13/300/300" alt=""></nav>
+  </article>
+  <nav class="second-nav"></nav>
+  <article>
+    <nav><img src="https://picsum.photos/id/14/600/600" alt=""></nav>
+    <nav><img src="https://picsum.photos/id/15/300/300" alt=""></nav>
+    <nav><img src="https://picsum.photos/id/16/300/300" alt=""></nav>
+  </article>
+  </div>
+</body>
+</html>
