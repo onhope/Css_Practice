@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클래스 선택자</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    div {
+      width: 30%;
+      height: 100px;
+      background-color: red;
+      display: inline-block;
+    }
+    /* div:nth-child(2) {
+      background-color: blue;
+    } */
+    .a {
+      background-color: pink;
+    }
+    .b {
+      background-color: black;
+    }
+    /* 클래스 a와 b를 동시에 가지는 요소 */
+    .a.b { 
+      background-color: gold;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <div></div>
+  <div class="a"></div>
+  <div></div>
+  <div class="a"></div>
+  <div class="a b c"></div>
+</body>
+</html>
