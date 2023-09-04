@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회색 사이트, 메뉴바 구현 - 1차 메뉴</title>
+  <style>
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    nav {
+      text-align: center;
+    }
+    nav > section {
+      display: inline-block;
+      background-color: gray;
+      padding: 0 20px;
+      border-radius: 20px;
+    }
+    nav > section > div {
+      display: inline-block;
+    }
+    nav > section > div:hover > a {
+      color: white;
+      background-color: black; 
+    }
+    nav > section > div > a {
+      display: block;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <section>
+      <div>
+        <a href="">Home</a>
+      </div>
+      <div>
+        <a href="">Tutorials</a>
+      </div>
+      <div>
+        <a href="">Article</a>
+      </div>
+      <div>
+        <a href="">Inspiration</a>
+      </div>
+    </section>  
+  </nav>
+</body>
+</html>
