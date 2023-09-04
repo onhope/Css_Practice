@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>inherit</title>
+  <style>
+    section, div, article {
+      border: 10px solid black;
+      padding: 50px;
+      margin: 50px;
+    }
+    section > div {
+      border-color: pink;
+    }
+    section > div > article {
+      border-color: green;
+    }
+    section {
+      color: red;
+      font-size: 3rem;
+      font-weight: bold;
+      background-color: yellow;
+      text-align: center;
+      width: 1500px;
+      height: 2000px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    section
+    <div>
+      div
+      <article>
+        article
+      </article>
+    </div>
+  </section>
+</body>
+</html>
