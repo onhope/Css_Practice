@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>모든 엘리먼트의 태그를 div로 바꾸기</title>
+  <style>
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .menu-box {
+      text-align: center;
+    }
+    .menu-box > .menu {
+      background-color: lightgray;
+      display: inline-block;
+      border-radius: 5px;
+      padding: 0 10px;
+ 
+    }
+    .menu-box > .menu > .menu-item {
+      display: inline-block;
+    }
+    .menu-box > .menu > .menu-item > .menu-item-text {
+      padding: 10px;
+      display: block;
+    }
+    .menu-box > .menu > .menu-item:hover > .menu-item-text {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-box">
+    <div class="menu">
+      <div class="menu-item">
+        <div class="menu-item-text">메뉴 아이템 1</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-text">메뉴 아이템 2</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-text">메뉴 아이템 3</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-text">메뉴 아이템 4</div>
+      </div>
+    </div>
+  </div> 
+</body>
+</html>
