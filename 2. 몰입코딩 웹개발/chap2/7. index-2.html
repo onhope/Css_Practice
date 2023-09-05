@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>드롭다운 메뉴 만들기2</title>
+  <style>
+    .menu-1 > ul > li {
+      list-style: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>완료 : 좀 더 올바른 마크업을 해주세요.</h1>
+  <h1>요구 : 메뉴 아이템 앞에 있는 점을 없애주세요.</h1>
+
+  <!-- nav 태그는 div 태그와 기능적으로는 완벽히 같다. -->
+  <!-- 다만 이렇게 하면 이것이 메뉴라는 의도를 분명하게 전달한다. -->
+  <!-- nav.menu-1>ul>li*3{메뉴아이템$} -->
+  <nav class="menu-1">
+    <ul>
+      <li>메뉴아이템1</li>
+      <li>메뉴아이템2</li>
+      <li>메뉴아이템3</li>
+    </ul>
+  </nav>
+</body>
+</html>
