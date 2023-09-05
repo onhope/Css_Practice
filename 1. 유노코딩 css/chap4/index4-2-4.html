@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex6: flex-wrap </title>
+  <style>
+    .container {
+      /* 플렉스 박스의 너비가 100px이고, 자식인 각각의 요소의 너비가 120px인 경우 */
+      /* 플렉스 박스를 넘어가는게 아니라, 자식인 각각의 요소의 너비를 자동으로 줄여버림 */
+      /* flew-wrap은 플렉스 박스의 자식(하위) 요소들이 플렉스 박스를 넘어갔을 때 처리방법을 결정 */
+      /* 기본은 nowrap : 줄바꿈 없음 */
+      /* wrap : 줄바꿈 */
+      /* wrap-reverse : 줄바꿈을 반대방향으로 진행 */
+      display: flex;
+      flex-wrap: wrap-reverse; 
+      width: 300px;
+      height: 300px;
+      border: 2px solid black;
+    }
+    .item {
+      width: 120px;
+      height: 60px;
+      background-color: teal;
+    }
+    .self {
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item self">2</div>
+    <div class="item">3</div>
+  </div>
+</body>
+</html>
