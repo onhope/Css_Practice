@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex3: justify-content</title>
+  <style>
+    .container {
+      display: flex;
+      width: 300px;
+      height: 300px;
+      border: 2px solid black;
+      justify-content: center; /* 주축 기준으로 중앙 정렬 */
+      justify-content: flex-start; /* 주축 기준으로 앞 정렬 */
+      justify-content: flex-end; /* 주축 기준으로 뒤 정렬 */
+      justify-content: space-around; /* 주축 기준으로 요소들 사이의 여백을 동일하게 맞춤 */
+      justify-content: space-between; /* 주축 기준으로 맨앞뒤 요소는 양끝에 붙이고, 사이 여백을 동일하게 맞춤 */
+    }
+    .item {
+      width: 60px;
+      height: 60px;
+      background-color: teal;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+</body>
+</html>
