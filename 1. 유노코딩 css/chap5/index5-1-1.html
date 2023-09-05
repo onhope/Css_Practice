@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>속성 선택자</title>
+  <style>
+    [class] {
+      color: blue;
+    }
+    [class="text"] {
+      color: aqua;
+    }
+    /* *= : 포함 */
+    [class*="te"] {
+      color: blueviolet;
+    }
+    /* $= 끝나는 경우 */
+    [class$="xt"] {
+      color: aquamarine;
+    }
+    [id] {
+      color: brown;
+    }
+    [id="unique"] {
+      color: orange;
+    }
+    /* ^= 시작하는 경우 */
+    [id^="uni"] {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <h1>선택자 연습하기</h1>
+  <p>1번 문단입니다. 그냥 태그</p>
+  <p class="text">2번 문단입니다. 클래스 있음</p>
+  <p id="unique">3번 문단입니다. 아이디 있음</p>
+  <p class="text">4번 문단입니다. 클래스 있음</p>
+  <p>5번 문단입니다. <span>스판있는</span>태그</p>
+</body>
+</html>
