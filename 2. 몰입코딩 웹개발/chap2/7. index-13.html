@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>드롭다운 메뉴 만들기13</title>
+  <style>
+    body {
+      color: blue;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    ul, li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .menu-1 {
+      text-align: center;
+    }
+    .menu-1 > ul {
+      background-color: #afafaf;
+      display: inline-block;
+      padding: 0 20px;
+      border-radius: 10px;
+    }
+    .menu-1 > ul > li {
+      list-style: none;
+      display: inline-block;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>완료 : 문서의 기본 글자색을 blue로 변경해주세요.</h1>
+  <h1>요구 : a 엘리먼트의 글자색에 대한 개성을 없애주세요.</h1>
+  
+  body의 텍스트!(유일한 body의 텍스트 입니다. 다른 것 들은 h1의 텍스트이거나 a의 텍스트 입니다.)
+  
+  <h1>생각해 볼 문제 1 : 왜 body 에 지정한 속성이 후손에게 전파되는가?</h1>
+  <h1>생각해 볼 문제 2 : 메뉴 아이템 텍스트(.menu-1>ul>li>a) 는 왜 body의 색상에 영향을 받지 않는가?</h1>
+  <h1>힌트 : 상속(inherit)</h1>
+  
+  <!--
+  nav.menu-1>ul>li*3>a[href=#]{메뉴아이템$}
+  -->
+  <nav class="menu-1">
+    <ul>
+      <li><a href="#">메뉴아이템1</a></li>
+      <li><a href="#">메뉴아이템2</a></li>
+      <li><a href="#">메뉴아이템3</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
