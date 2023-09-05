@@ -1,0 +1,113 @@
+/* 폰트 시작 */
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+
+html {
+  font-family: 'LotteMartDream', sans-serif;
+}
+/* 폰트 끝 */
+
+/* 노말라이즈 시작 */
+body, ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 노말라이즈 끝 */
+
+/* 라이브러리 시작 */
+.bg-red {
+  background-color: red;
+}
+.bg-blue {
+  background-color: blue;
+}
+.bg-green {
+  background-color: green;
+}
+.con {
+  margin-left: auto;
+  margin-right: auto;
+}
+.block {
+  display: block;
+}
+
+/* 라이브러리 끝 */
+
+/* 커스텀 시작 */
+:root {
+  --site-width : 1200px;
+}
+.con-min-width {
+  min-width: var(--site-width);
+  padding: 0 10px;
+}
+.con {
+  width: var(--site-width);
+}
+/* 탑바 시작 */
+:root {
+  --top-bar__left-box__width:300px;
+}
+.top-bar {
+  background-color: black;
+  color: white;
+}
+.top-bar__left-box {
+  display:inline-block;
+  vertical-align:top;
+  width:var(--top-bar__left-box__width);
+}
+
+.top-bar__right-box {
+  width:calc(100% - var(--top-bar__left-box__width));
+  vertical-align:top;
+  display:inline-block;
+  text-align:right;
+}
+
+.top-bar__logo {
+  font-size:2rem;
+  padding:12px 0;
+  text-align:left;
+}
+.top-bar__menu-box-1 {
+  display: inline-block;
+}
+.top-bar__menu-box-1 > ul > li {
+  display: inline-block;
+}
+.top-bar__menu-box-1 > ul > li > a {
+  padding: 20px;
+  font-weight: bold;
+}
+.top-bar__menu-box-1 > ul > li:hover > a {
+  background-color: white;
+  color: black;
+}
+/* 탑바 끝 */
+/* 커스텀 끝 */
