@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex4: align-item</title>
+  <style>
+    .container {
+      display: flex;
+      width: 300px;
+      height: 300px;
+      border: 2px solid black;
+      justify-content: space-between; 
+      align-items: flex-end; /* 교차축의 아래로 정렬 */
+      align-items: flex-start; /* 교차축의 위로 정렬 */
+      align-items: center; /* 교차축의 중앙으로 정렬 */
+    }
+    .item {
+      width: 60px;
+      height: 60px;
+      background-color: teal;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+</body>
+</html>
