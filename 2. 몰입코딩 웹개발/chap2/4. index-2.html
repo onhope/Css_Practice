@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>min-width</title>
+  <style>
+    body {
+      margin: 0;
+    } 
+    .top-bar {
+      background-image: linear-gradient(to right, red, green);
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .con  {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    :root {
+      --site-width : 1200px;
+    }
+    .con-min-width {
+      min-width: var(--site-width);
+      padding: 0 10px;
+    }
+    .con {
+      width: var(--site-width);
+    }
+  </style>
+</head>
+<body>
+  <header class="top-bar con-min-width">
+    <div class="con">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem excepturi voluptas ullam eum officiis dolorem dolore dolores. Sed, enim laboriosam. Ipsam laborum in quam quis praesentium beatae iste provident consequatur.
+      Nisi aliquam omnis repellendus culpa! Obcaecati incidunt explicabo cupiditate sapiente placeat ad magni nihil rerum odit voluptatem vero, qui tempora facere corrupti suscipit ut aut! Sint consequatur corrupti dolore necessitatibus!
+    </div>
+  </header>
+</body>
+</html>
