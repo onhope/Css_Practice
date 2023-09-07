@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공용키워드</title>
+  <style>
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+
+      /* 상속 가능*/
+      color: tomato; 
+      font-size: 24px;
+      /* 상속 불가 */
+      border: 3px dashed red;
+    }
+    p {
+      color: inherit;
+      border: inherit;
+
+      color: initial;
+      border: initial;
+
+      color: unset;
+      font-size: unset;
+      border: unset;
+      width: unset
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>가운데 p 태그</p>
+  </div>
+</body>
+</html>
