@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    .box-1 {
+      /* vh : 화면 너비 대비 % */
+      height: 50vh;
+      background-color: blue;
+    }
+    .box-1-2 {
+      background-color: teal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="box-1">
+    안녕하세요.
+  </div>
+  <div class="box-1 box-1-2">
+    반갑습니다.
+  </div>
+</body>
+</html>
