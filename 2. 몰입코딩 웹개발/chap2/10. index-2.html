@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-shadow : 글자 외곽선 표시</title>
+  <style>
+    :root {
+      --text-border-width : 5px;
+    }
+    div {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: var(--text-border-width) 0 0 black,
+        calc(var(--text-border-width) * -1) 0 0 black,
+        0 calc(var(--text-border-width) * -1) 0 black,
+        0 var(--text-border-width) 0 black;
+    }
+  </style>
+</head>
+<body>
+  <div>안녕</div>
+</body>
+</html>
