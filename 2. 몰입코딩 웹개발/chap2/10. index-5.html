@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고정비율 엘리먼트</title>
+  <style>
+    img {
+      width: 100%;
+      display: block;
+    }
+    div {
+      background-color: red;
+    }
+    div::after {
+      content: "";  
+      display: block;
+      padding-top: 50%;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://picsum.photos/id/237/100/200" alt="img">
+</body>
+</html>
