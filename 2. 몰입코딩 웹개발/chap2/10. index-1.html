@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-shadow : hover, 그림자 이동</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    div {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #996D6D;
+    }
+    div > span {
+      font-weight: bold;
+      font-size: 3rem;
+      color: white;
+      display: inline-block;
+      text-shadow: #474747 30px 50px 20px;
+      transform: translate(-30px, -50px);
+      transition: text-shadow 1s, transform 1s;
+    }
+
+    div:hover > span {
+      transform: translate(0px, 0px);
+      text-shadow: #474747 30px 50px 0px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span>SEARCH</span>
+  </div>
+</body>
+</html>
