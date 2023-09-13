@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>음수마진</title>
+  <style>
+    /* 노멀라이즈 */
+    body {
+      margin: 0;
+    }
+    /* 라이브러리 */
+    .con {
+      margin: 0 auto;
+    }
+    /* 커스텀 */
+    .con {
+      max-width: 300px;
+    }
+    .title-bar {
+      font-weight: bold;
+      font-size: 2rem;
+      background-color: red;
+      padding: 20px 0;
+      margin-top: 30px;
+    }
+    .title-bar > span {
+      background-color: blue;
+    }
+    .title-bar:nth-child(1) {
+      margin-top: 0;
+    }
+    .title-bar:nth-child(2) > span {
+      margin-left: -50px;
+    }
+    .title-bar:nth-child(3) > span {
+      margin-left: -100px;
+    }
+    .title-bar:nth-child(4) {
+      text-align: right;
+    }
+    .title-bar:nth-child(4) > span {
+      margin-right: -100px;
+    } 
+  </style>
+</head>
+<body>
+  <div class="con title-bar"><span>"타이틀1"</span></div>
+  <div class="con title-bar"><span>"타이틀2"</span></div>
+  <div class="con title-bar"><span>"타이틀3"</span></div>
+  <div class="con title-bar"><span>"타이틀4"</span></div>
+</body>
+</html>
