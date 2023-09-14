@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position:absolute를 이용해 화면 3등분하기</title>
+  <style>
+    section > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% / 3);
+      height: 100%;
+      background-color: red;
+    }
+    section > div:nth-child(2) {
+      background-color: green;
+      left: calc(100% / 3);
+    }
+    section > div:nth-child(3) {
+      background-color: black;
+      left: calc(100% / 3 * 2);
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+</body>
+</html>
